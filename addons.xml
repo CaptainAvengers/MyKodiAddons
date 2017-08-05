@@ -65,7 +65,7 @@
     <summary>Dramas, shows, and movies from icdrama.se</summary>
     <description>Provides contents from icdrama.se. "Happy wife, happy life"</description>
     <disclaimer>This addon is not affiliated with icdrama.se</disclaimer>
-    <platform>all</platform>
+   <platform>all</platform>
     <license>MIT License</license>
   </extension>
 </addon>
@@ -75,8 +75,7 @@
 		<dir>
 			<info compressed="false">https://github.com/johndoe80/summer-project/raw/master/addons.xml</info>
 			<checksum>https://github.com/johndoe80/summer-project/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/johndoe80/summer-project/raw/master/zips/</datadir>
-		</dir>
+			<datadir zip="true">https://github.com/johndoe80/summer-project/raw/master/zips/</datadir>		</dir>
 		<dir>
 			<info compressed="false">https://github.com/zqfaen/tva-common/raw/master/addons.xml</info>
 			<checksum>https://github.com/zqfaen/tva-common/raw/master/addons.xml.md5</checksum>
