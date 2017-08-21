@@ -125,4 +125,44 @@
     </assets>
   </extension>
 </addon>
+
+<addon id="plugin.video.MyAddon" 
+       name="[COLOR yellow]MY[/COLOR][COLOR red]Addon[/COLOR]"
+       version="1.1.2"
+       provider-name="Entersandman">
+
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+	
+<import addon="script.logviewer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="MyAddon.py">
+    
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+        <summary lang="en">MyAddon</summary>
+        <description lang="en">Malaysian Compilations Content</description>
+  	<disclaimer lang="en">All content is copyright of their respective owners.</disclaimer>
+  	<platform>all</platform>
+  	<language>en</language>
+  	<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+  	<forum></forum>
+  	<website></website>
+  	<email></email>
+  	<source></source>
+  </extension>
+</addon>
 </addons>
