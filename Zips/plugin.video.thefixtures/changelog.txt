@@ -1,0 +1,14 @@
+v1.0
+Initial Release
+
+v1.1
+Added new sections: Watch Again, Replays & Highlights, Sports Radio
+
+v1.2
+Moved to better server
+
+v1.3
+Multiple channel sources
+
+v3.0
+New sources
