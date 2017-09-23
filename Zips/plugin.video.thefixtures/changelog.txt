@@ -10,5 +10,5 @@ Moved to better server
 v1.3
 Multiple channel sources
 
-v3.0
+v3.1
 New sources
