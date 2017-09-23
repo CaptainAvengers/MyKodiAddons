@@ -157,8 +157,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.elysium" version="2017.08.30" name="Elysium" provider-name="Elysium">
-	<requires>
+<addon id="plugin.video.elysium" version="2017.08.30" name="Elysium" provider-name="Elysium">	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.elysium.artwork" version="2017.06.27"/>
 		<import addon="script.module.urlresolver"/>
