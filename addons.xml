@@ -233,4 +233,38 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.sensasi" 
+       name="Sensasi"
+       version="4.0.0"
+       provider-name="Kextreme">
+
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />    
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+        <summary lang="en">Sensasi</summary>
+        <description lang="en">Visit Facebook Kextreme For Latest Release Updates and Andriod Box T8U Zoomtak.Pm Me For More Details.Thanks</description>
+  	<disclaimer lang="en"></disclaimer>
+  	<platform>all</platform>
+  	<language>en</language>
+  	<license></license>
+  	<forum></forum>
+  	<website></website>
+  	<email>jeffsrightnow[at]gmail.com</email>
+  	<source></source>
+  </extension>
+</addon>
+
 </addons>
