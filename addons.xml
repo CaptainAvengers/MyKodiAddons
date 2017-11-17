@@ -101,7 +101,7 @@
 
 <addon id="plugin.video.thefixtures"
        name="BOOM!"
-       version="3.2"
+       version="3.3"
        provider-name="Clummo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
