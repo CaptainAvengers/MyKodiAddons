@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <addons>
-<addon id="plugin.video.veetle" version="0.3.4" name="Veetle" provider-name="fightnight (creator: t0mm0)">    
+<addon id="plugin.video.veetle" version="0.3.5" name="Veetle" provider-name="fightnight (creator: t0mm0)">    
 	<requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.simplejson" version="2.0.10"/>
         <import addon="script.common.plugin.cache" version="1.3.0"/>
-	<import addon="repository.Cypherslocker" />
+	<import addon="repository.supremacy" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -19,14 +19,48 @@
     </extension>
 </addon>
 
-<addon id="repository.maverickrepo" name="[COLOR lime]MaverickTV Repo[/COLOR]" version="1.5" provider-name="Maverick TV">
+<addon id="repository.supremacy" name="supremacy" version="1.5" provider-name="supremacy">
+	<extension point="xbmc.addon.repository" name="supremacy">
+		<info compressed="false">http://supremacy.org.uk/zip/plugin/addon.xml</info>
+		<checksum>http://supremacy.org.uk/zip/plugin/addons.xml.md5</checksum>
+		<datadir zip="true">http://supremacy.org.uk/zip/plugin/</datadir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+			<dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>video addon for supremacy</summary>
+		<description>Latest Addon Updates For Supremacy Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.maverickrepo" name="[COLOR lime]MaverickTV Repo[/COLOR]" version="2.2" provider-name="Maverick TV">
 <extension point="xbmc.addon.repository" name="[COLOR lime]MaverickTV Repo[/COLOR]">
+	<dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+	<dir>
+	<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+	</dir>
+
 		<info compressed="false">http://mavericktv.net/mavrepo/plugins/addons.xml</info>
 		<checksum>http://mavericktv.net/mavrepo/plugins/addons.xml.md5</checksum>
 		<datadir zip="true">http://mavericktv.net/mavrepo/plugins/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>The MaverickTV Repository v1.3</summary>
+		<summary>The MaverickTV Repository v2.2</summary>
 		<description>The MaverickTV Repository for add-on and dependencies</description>
 		<platform>all</platform>
 	</extension>
@@ -163,40 +197,6 @@
   	<email>jeffsrightnow[at]gmail.com</email>
   	<source></source>
   </extension>
-</addon>
-
-<addon id="plugin.video.wwe-on-demand" name="Wrestling On Demand" version="5.03" provider-name="Bear and Jay">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.urlresolver"  version="4.0.06"/>
-    <import addon="script.module.liveresolver" version="0.1.24"/>
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="plugin.video.youtube" />
-	<import addon="repository.bear" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Home Of Wrestling On Demand</summary>
-    <description lang="en">Home Of Wrestling On Demand </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="repository.bear" name="PBear Repository" version="1.00" provider-name="PBear">
-	<extension point="xbmc.addon.repository" name="The Community Repository">
-		<info compressed="false">http://repo.pbear.srve.io/addons.xml</info>
-		<checksum>http://repo.pbear.srve.io/addons.xml.md5</checksum>
-		<datadir zip="true">http://repo.pbear.srve.io/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>PBear Repo</summary>
-		<description>Repo</description>
-		<platform>all</platform>
-	</extension>
 </addon>
 
 <addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="2.3.2" provider-name="noobsandnerds">
