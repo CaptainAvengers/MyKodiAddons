@@ -2,7 +2,7 @@
 
 <addon id="plugin.video.sensasi" 
        name="Sensasi"
-       version="4.0.0"
+       version="4.0.1"
        provider-name="Kextreme">
 
   <requires>
