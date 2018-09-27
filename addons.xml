@@ -179,7 +179,7 @@
 
 <addon id="plugin.video.sensasi" 
        name="Sensasi"
-       version="4.0.2"
+       version="4.0.3"
        provider-name="Kextreme">
 
   <requires>
@@ -192,7 +192,8 @@
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" />
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />    
+    <import addon="script.module.simplejson" />
+	<import addon="script.module.swiftstreamz" version="9" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
