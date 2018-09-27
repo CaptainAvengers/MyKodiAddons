@@ -15,7 +15,8 @@
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" />
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />    
+    <import addon="script.module.simplejson" />  
+    <import addon="script.module.swiftstreamz" />  
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
