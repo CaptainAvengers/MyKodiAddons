@@ -293,6 +293,7 @@ c<addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="2
   </extension>
 </addon>
 
+<addon>
 <addon id="script.module.swiftstreamz" name="Swift Streamz" version="9" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
