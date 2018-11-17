@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.juneboom"
        name="[COLOR red]BOOM[/COLOR][COLOR yellow]![/COLOR]"
-       version="4.5"
+       version="4.6"
        provider-name="BOOM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
