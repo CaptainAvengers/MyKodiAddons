@@ -145,38 +145,6 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.thefixtures"
-       name="BOOM!"
-       version="3.6"
-       provider-name="Clummo">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" /> 
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="script.video.F4mProxy" version="2.8.1"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en">In memory of Lee (Wookie L)</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.sensasi" 
        name="Sensasi"
        version="4.0.3"
@@ -379,6 +347,33 @@ c<addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="2
     <summary lang="en_gb"></summary>
     <description lang="en_gb"></description>
     <platform>all</platform>
+  </extension>
+</addon>
+	
+<addon id="script.module.bybmodules"
+   name="BYB Modules"
+   version="0.0.2.2"
+   provider-name="BYB">
+  <requires>
+    <import addon="xbmc.python" version="2.7.13"/>
+    <import addon="script.module.python.koding.aio" version="0.0.1"/>
+    <import addon="script.module.resolveurl" version="5.0.07"/>
+    <import addon="script.module.dateutil" version="2.5.3"/>
+    <import addon="script.module.feedparser"/>
+    <import addon="script.module.beautifulsoup4" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Kodi python modules</summary>
+    <description lang="en"></description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <license>Creative Commons 4.0-NC-ND</license>
+    <forum></forum>
+    <website></website>
+    <news></news>
+    <source></source>
   </extension>
 </addon>
 </addons>
