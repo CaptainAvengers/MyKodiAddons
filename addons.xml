@@ -179,7 +179,7 @@ tension>
   </ex
 </addon>
 
-c<addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="2.3.2" provider-name="noobsandnerds">
+<addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="2.3.2" provider-name="noobsandnerds">
         <extension point="xbmc.addon.repository" name="noobsandnerds Repository">
                 <dir>
                         <info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
