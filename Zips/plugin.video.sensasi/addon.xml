@@ -2,7 +2,7 @@
 
 <addon id="plugin.video.sensasi" 
        name="Sensasi"
-       version="4.0.3"
+       version="6.0.0"
        provider-name="Kextreme">
 
   <requires>
@@ -15,15 +15,14 @@
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" />
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-	<import addon="script.module.swiftstreamz" version="9" />
+    <import addon="script.module.simplejson" />    
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
         <summary lang="en">Sensasi</summary>
-        <description lang="en">Visit Facebook Kextreme For Latest Release Updates and Andriod Box T8U Zoomtak.Pm Me For More Details.Thanks</description>
+        <description lang="en">Visit Facebook Kextreme For Latest Release Updates and Andriod Box T8U-Pro Zoomtak.Pm Me For More Details.Thanks</description>
   	<disclaimer lang="en"></disclaimer>
   	<platform>all</platform>
   	<language>en</language>
