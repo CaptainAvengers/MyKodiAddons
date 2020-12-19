@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
 
 <addon id="repository.supremacy" name="supremacy" version="1.5" provider-name="supremacy">
 	<extension point="xbmc.addon.repository" name="supremacy">
@@ -68,26 +69,6 @@
 	<extension point="xbmc.addon.metadata">
 		<summary>Cypers Locker Repo - Home to Project Cypher</summary>
 		<description>Cypers Locker Repo - Home to Project Cypher.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.aftershock" name="Aftershock addons" version="3.0.1" provider-name="AftershockPY">
-	<extension point="xbmc.addon.repository" name="Aftershock add-on repository">
-		<dir>
-			<info compressed="false">https://github.com/johndoe80/summer-project/raw/master/addons.xml</info>
-			<checksum>https://github.com/johndoe80/summer-project/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/johndoe80/summer-project/raw/master/zips/</datadir>		</dir>
-		<dir>
-			<info compressed="false">https://github.com/zqfaen/tva-common/raw/master/addons.xml</info>
-			<checksum>https://github.com/zqfaen/tva-common/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/zqfaen/tva-common/raw/master/zips/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install video addons from Aftershock</summary>
-		<description>Download and install video addons from Aftershock Adddon repository.</description>
-		<disclaimer>The video add-ons hosted by add-ons repository(Aftershock add-ons) makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, video add-ons don't warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on the Internet web site where from data is retrieved or otherwise relating to such materials or on any sites linked to this addon. Videos are streamed directly from video-hosting websites that are having full rights to remove such access to video if required.</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -184,30 +165,6 @@
         </extension>
 </addon>
 
-<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2017.11.22" provider-name="eracknaphobia">
-  <requires>
-   <import addon="xbmc.python" version="2.19.0"/>
-   <import addon="script.module.simplejson" version="3.3.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="nbcsn.py">
-        <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Watch NBCSN Live Extra</summary>
-    <description lang="en">NBC Sports Live Extra is a service that allows you to watch NBC Sports coverage of live events from NBC and NBCSports Network</description>
-    <disclaimer lang="en"></disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=207159</forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-	
 <addon id="script.module.swiftstreamz" name="Swift Streamz" version="9" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -233,70 +190,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.1" provider-name="Bugatsinho">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-        <import addon="plugin.video.f4mTester" />
-        <import addon="script.module.streamlink.base" />
-        <import addon="script.module.pyxbmct" version="1.2.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Sport365 originally made by GalAnonim</summary>
-    <description lang="en">Fork version 1.0 by GalAnonim!Kindly note that Sport365 Live is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
-    <disclaimer lang="en">Sport365 Live does not provide any streams of its own. Stream quality, content and copyright are responsibility of the ad-financed source web site.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>https://bugatsinho.github.io</website>
-    <twitter>@bugatsinho</twitter>
-  <assets>
-    <icon>icon.png</icon>
-    <fanart>fanart.png</fanart>
-  </assets>
-  <news>2.6.1 07-06-2019
-- Fix links resolver</news>
-  </extension>
-</addon>
-
-<addon id="plugin.video.juneboom"
-       name="[COLOR red]BOOM[/COLOR][COLOR yellow]![/COLOR]"
-       version="4.6"
-       provider-name="BOOM">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" /> 
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-    <import addon="script.module.python.koding.aio" version="0.0.1"/>
-    <import addon="script.module.bybmodules"  version="0.0.0.1"/>
-    <import addon="script.module.resolveurl" version="5.0.07"/>
-    <import addon="script.module.dateutil" version="2.5.3"/>
-    <import addon="script.module.universalscrapers" version="1.0.9"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb"></summary>
-    <description lang="en_gb"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-	
 <addon id="script.module.bybmodules"
    name="BYB Modules"
    version="0.0.2.2"
@@ -366,40 +259,6 @@
 	</extension>
 </addon>
 	
-<addon id="plugin.video.deceit" name="Deceit" version="1.2.2" provider-name="Collusion/OneNation">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-	<import addon="repository.onenation" version="1.0.5" />
-        <import addon="script.module.universalscrapers" version="1.0.0" />
-        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <import addon="plugin.video.youtube"
-version="6.0.0~alpha6" />
-        <import addon="script.module.dateutil" />
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-        <import addon="script.module.resolveurl" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-      <reuselanguageinvoker>false</reuselanguageinvoker>
-      <summary lang="en">Collusion/OneNation</summary>
-      <summary lang="he">הרחבת וידאו Jen</summary>
-      <description lang="en">An All-In-One Jen Powered Addon from Collusion and the OneNation Team. Massive Respect to all over in the Jen group without whom this wouldnt of been possible</description>
-      <description lang="he">האחות הקטנה של בוב</description>
-      <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-      <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
-      <platform>all</platform>
-        <website></website>
-        <video_guide></video_guide>
-    </extension>
-</addon>
-
 <addon id="plugin.video.the-loop" name="The Loop" version="1.3" provider-name="Munkee">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
