@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<addons>
-<addon id="plugin.video.veetle" version="0.3.5" name="Veetle" provider-name="fightnight (creator: t0mm0)">    
-	<requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.simplejson" version="2.0.10"/>
-        <import addon="script.common.plugin.cache" version="1.3.0"/>
-	<import addon="repository.supremacy" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point= "xbmc.addon.metadata">
-	<summary lang="en">Browse and stream from veetle.com</summary>
-	<description lang="en">Enables watching streams on veetle.com that are flash enabled.</description>
-        <disclaimer lang="en">Does not work for 'HD' streams which require a software download.</disclaimer>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 <addon id="repository.supremacy" name="supremacy" version="1.5" provider-name="supremacy">
 	<extension point="xbmc.addon.repository" name="supremacy">
 		<info compressed="false">http://supremacy.org.uk/zip/plugin/addon.xml</info>
@@ -698,6 +679,52 @@ v2.3.14 (2019-02-10)
   	<website></website>
   	<email>jeffsrightnow[at]gmail.com</email>
   	<source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.live.streamspro" name="IPTV" version="20.9.7" provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.dateutil" optional="true" />
+    <import addon="script.module.resolveurl" optional="true"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.cloudscraper" optional="true"/>
+    <import addon="script.module.inputstreamhelper" optional="true"/>
+    <import addon="script.module.simplejson" />    
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.slproxy" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreamspro- shamelessly forked from livestreams but added many things</summary>
+    <description>
+        In addition to what livestreams allowed you to do, you can now,
+        1. call regex in regex,
+        2. multiple regex in page, regex in session, also htmlunescape responses
+        3. create session from one regex and pass onto next in line
+        4. save sessions to a file and open again later
+        5. write python code in .py file, put in the profile directory and then call from your regex.
+        6. use epoctime, guid and unpack as functions already defined.
+        7. Use it to post values to the pages to get the proper responses
+        8. support many headers, like origin, X-Requested-With
+        9. you can now append cookies in response and then read in regex using includeheaders
+        10. You can now link to another web url via your xml using externallink
+        11. support for google captcha, now you can show and then post the text
+        
+    </description>
+    <platform>all</platform>
   </extension>
 </addon>
 </addons>
