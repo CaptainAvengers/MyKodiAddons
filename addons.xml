@@ -460,7 +460,7 @@ v2.3.14 (2019-02-10)
     </extension>
 </addon>
 
-<addon id="plugin.video.dramacool" name="DramaCool" version="2.0.1" provider-name="groggyegg">
+<addon id="plugin.video.dramacool" name="DramaCool" version="2.0.2" provider-name="groggyegg">
     <requires>
         <import addon="script.module.lxml" optional="true"/>
         <import addon="script.module.resolveurl"/>
